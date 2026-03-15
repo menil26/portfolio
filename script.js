@@ -1,5 +1,3 @@
-// Smooth scroll navigation
-
 document.querySelectorAll('.nav-links a').forEach(function(link){
 
 link.addEventListener('click', function(e){
@@ -16,9 +14,6 @@ behavior:'smooth'
 
 });
 
-
-// Scroll animation
-
 const sections = document.querySelectorAll('.section');
 
 window.addEventListener('scroll', function(){
@@ -28,9 +23,7 @@ sections.forEach(function(section){
 const sectionTop = section.getBoundingClientRect().top;
 
 if(sectionTop < window.innerHeight - 100){
-
 section.classList.add('show');
-
 }
 
 });
